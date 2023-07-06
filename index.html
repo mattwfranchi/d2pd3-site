@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <title>COVID-19 Mobility Network Modeling</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/round-about.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/css_1.css" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <link href="css/interactive.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HE3T4B73J"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9HE3T4B73J');
+    </script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    COVID-19 Mobility Modeling
+                    <!-- <i class="fa fa-play-circle"></i> -->
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#project">Project</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#paper">Paper</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#data">Data</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#simulation">Simulation</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#press">Press</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#acknowledgments">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1>COVID-19 Mobility<br> Network Modeling</h1>
+                        <p class="intro-text" style="background-color:black;opacity:0.8">Mobility network models of COVID-19<br>explain inequities and inform reopening.</p>
+
+                        <p style="background-color:black;opacity:0.8">If you are writing about or interested in our work, we highly recommend reading our <a href=#faq>FAQ</a> for the main takeaways and for non-technical answers to common questions!</p>
+
+                        <a href="#project" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Section -->
+    <section id="project" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>PROJECT</h2>
+                <p style="margin-top:20px;">
+
+                  We model the spread of SARS-CoV-2 within 10 of the largest metropolitan statistical areas in the United States using dynamic mobility networks that encode the hourly movements of 98 million people between 56,945 neighborhoods and 552,758 points of interest (like restaurants, gyms, and grocery stores) using 5.4 billion edges. A video of our model in Chicago, starting from March 1, is shown below: from left, the plots show the total number of visits to points of interest in the mobility data; the model's predicted fraction of the population in the Susceptible, Exposed, Infectious, and Removed states; and the model's predicted geographic distribution of infections. After showing that our model accurately fits case counts, we use it to study the equity and efficiency of fine-grained reopening strategies. 
+                </p>
+
+
+
+
+
+            </div>
+            <video controls loop autoplay>
+                  <source src="images/Chicago_Naperville_Elgin_IL_IN_WI.mp4" type="video/mp4">
+                </video>
+            <div class="col-lg-8 col-lg-offset-2">
+            <!--
+            <p>
+            After showing that our model accurately fits case counts, we use it to study the equity and efficiency of fine-grained reopening strategies. Our model predicts that a small fraction of "superspreader" locations account for a large majority of infections, and that restricting maximum occupancy at each location is more effective than uniformly reducing occupancy. Our model also correctly predicts higher infection rates among disadvantaged racial and socioeconomic groups solely from differences in mobility. These disparities occur in part because disadvantaged groups have not been able to reduce their mobility as sharply, and the locations they visit are more crowded and therefore higher risk.</p>
+            <div>
+            -->
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>FAQ</h2>
+    <p style="color:lightblue;"><b>What data do you use?</b></p>
+    <p>We use anonymized, aggregated data from SafeGraph, a company that tracks human movement patterns using cell phone data. Our data records how many people go to points of interest (POIs) like restaurants and grocery stores at every hour, and also records the neighborhoods they come from.</p>
+
+    <p style="color:lightblue;"><b>What time period do you analyze? </b></p>
+    <p>We analyze data from the first wave of infections in the spring, from March to May 2020, in 10 large US metro areas. Please be careful to avoid overgeneralizing from that time period, because mobility patterns, infection rates, and the precautions that people take (like mask-wearing) have changed since then. We are working on analysis with more recent data.</p>
+
+    <p style="color:lightblue;"><b>How does your model predict infections?</b></p>
+    <p>Every neighborhood starts our simulation with some low level of infection; this represents the beginning of March 2020. As the simulation progresses hour-by-hour, people move around based on the mobility data. If there are multiple people visiting the same POI in the same hour, and some are infectious while others are susceptible, then our model predicts that there is some probability of new infections occurring. How large that probability is depends on the area of the POI, how long visitors stay there, and how many of the current visitors are infectious. Our model also gives people a chance of getting infected at home from household transmission. So, for every hour, we move people around, and we simulate the number of new infections happening at each POI and in each neighborhood at home. This is how we are able to model <i>who</i> is infected, <i>where</i> they are infected, and <i>when</i> they are infected.</p>
+
+    <p style="color:lightblue;"><b>Do you use data on how many people were infected<br> at different types of places?</b></p>
+    <p>No. While we use mobility data on how many people <i>visited</i> each different place, we calibrate our model for each metro area against the overall case counts for that metro area. While data on where people were infected might in principle come from contact tracing efforts, unfortunately, that kind of data was not available at a large scale in the areas that we studied.</p>
+
+    <p style="color:lightblue;"><b>What does your model say about the risks of different categories of places, like restaurants or gyms?</b></p>
+    <p>    We model the risk of <i>fully reopening</i> a POI category: that is, how much would predicted infections increase if we returned this category to pre-pandemic levels of mobility without taking additional precautions like increased mask-wearing or occupancy caps. (Because we model the risk of <i>reopening</i> a category, we can find that a category is risky to reopen even if it was closed during most of the time period we study.) We find that on average across metro areas, reopening full-service restaurants, gyms, hotels, and cafes produces the largest predicted increase in infections. This is because 1) there are many POIs in these categories (especially restaurants), and 2) when fully reopened, these places tend to be relatively crowded with people spending long times there. Our analysis agrees with prior work about which categories of business are risky to reopen. </p>
+
+    <p>Importantly, the risk to society of fully reopening a category is <i>not</i> equivalent to how risky it is for you, as an individual, to visit a POI in that category now. There are a number of differences: 1) we study the risk of reopening the entire category, not the risk of one person visiting one of these places; 2) POIs within the same category vary a lot in how risky they are; 3) we study data from the spring, but nowadays many places have modified their levels of mobility and may also be taking additional precautions like mask-wearing.</p>
+
+    <p style="color:lightblue;"><b>What does your model say about "superspreader POIs"? </b></p>
+    <p>The model predicts that a small fraction of POIs accounted for a large fraction of infections at POIs during the time range we study. For example, in Chicago, the model predicts that 10% of POIs accounted for 85% of infections at POIs. These riskier places come from multiple categories (eg, they are not all restaurants or gyms), but tend to have higher densities of visitors, and visitors who stay longer. Importantly, not all infections occur at POIs, because the model also allows people to get infected in their homes. Across metro areas, our model predicts that infections at POIs account for 70% of all infections on average.</p>
+
+    <p style="color:lightblue;"><b>How do you model reduced occupancy reopening? Why does a 20% maximum occupancy cap result in only a 42% reduction in visits in Chicago?</b></p>
+    <p>We assume that mobility patterns to all POIs return to pre-pandemic levels, except that hourly visits to each POI are capped so they cannot exceed a fraction of the POI’s maximum occupancy. For example, if a POI’s original maximum occupancy was 100 people, a 20% cap would mean that the business could not have more than 20 visits per hour. This would not affect visit patterns during hours where the POI already had fewer than 20 visits. This means that even stringent occupancy caps can result in relatively small reductions in the total number of visits because they only affect businesses during their most crowded hours, and leave visit patterns during less crowded hours unchanged. We have not tested other types of partial reopening, like curfews, only opening on some days of the week, or assuming that people revisit at another time if they are prevented from entering a business because it is too crowded, although our model is equipped to simulate these things.</p>
+
+    <p style="color:lightblue;"><b>What does your model say about socioeconomic and racial disparities in COVID infection rates?</b></p>
+    <p>Our model predicts that lower income and less white neighborhoods will have higher infection rates, which is consistent with what actually happened  during the time period we model. It predicts this for two reasons: 1) people from these neighborhoods were not able to reduce their mobility by as much (in part because they were more likely to be essential workers), and 2) when they went out, they worked in or visited POIs that were more crowded and more dangerous. Consequently, reopening strategies can have a different impact on disadvantaged groups than on the population as a whole, and it’s important to take this into account.</p>
+
+    <p style="color:lightblue;"><b>What are the takeaways of your findings for policy-makers?</b></p>
+    <p>Reopening does not have to be “all-or-nothing”: strategies like reducing maximum occupancy can enable us to reopen more efficiently by providing a large reduction in infections for a relatively small reduction in visits. Our model also suggests that racial and socioeconomic disparities are driven in part by mobility: they’re not inevitable, but can be influenced by short-term policy decisions. Therefore, in evaluating reopening strategies, it’s important not just to consider the impact on the population as a whole, but also the impact on disadvantaged groups. This supports steps being taken by <a href="https://www.sfchronicle.com/health/article/California-unveils-coronavirus-equity-roadmap-for-15610779.php">California</a> and the <a href="https://buildbackbetter.com/priorities/covid-19/">Biden-Harris transition team</a> to specifically consider the impact of reopening policies on disadvantaged populations.</p>
+
+    <p style="color:lightblue;"><b>What are the takeaways of your findings for individuals?</b></p>
+    <p>Our results show how mobility can have a real impact on infection rates: social distancing matters, and your daily choices and sacrifices make a difference! For example, our model predicts that if people had not reduced their mobility in March, the Chicago metro area would’ve seen 6x the number of infections by the beginning of May, and the San Francisco metro area would’ve seen 10x the number of infections. We do not recommend using our findings about risky POIs to plan your daily life, because our analysis is designed for policymakers, not individuals (see our answer above to “What does your model say about the risks of different categories of places, like restaurants or gyms?”).</p>
+
+    <p style="color:lightblue;"><b>Do you model changes in mask-wearing?</b></p>
+    <p>No. The goal of our analysis was to model the effects of changes in mobility. However, abundant scientific evidence demonstrates that mask-wearing is an essential part of reducing infections, in combination with the mobility reductions that we measure.</p>
+
+    <p style="color:lightblue;"><b>Do you study the impact of schools? What about public transportation?</b></p>
+    <p>We do not specifically examine the impact of school reopenings because children under 13 are not well-tracked by our cell-phone mobility data, so we are not sure we can fully capture the risk of these places. We do not specifically study public transportation because we are similarly concerned that the data does not allow us to properly model disease transmission there. In general, we report results for the categories of places where we are most confident we can adequately model risk. </p>
+
+      <p style="color:lightblue;"><b>Can you use the model to predict what will happen in the next weeks/months?</b></p>
+    <p>In principle we can, but we need to provide the model with updated data on mobility and COVID-19 cases, since the analysis in our paper uses data from the spring. We are working on doing this now.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Paper Section -->
+    <section id="paper" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Paper</h2>
+                <p>Click <a href="https://rdcu.be/canVA" target="_new">here</a> to read our paper!<br>
+                </p>
+                <p>
+                 <b>Citation</b>: Serina Y Chang*, Emma Pierson*, Pang Wei Koh*, Jaline Geradin, Beth Redbird, David Grusky, and Jure Leskovec. Mobility network models of COVID-19 explain inequities and inform reopening. <i>Nature</i>, 2020.
+                </p>
+
+
+                <p><b>Abstract:</b>
+                    The COVID-19 pandemic dramatically changed human mobility patterns, necessitating epidemiological models which capture the effects of changes in mobility on virus spread. We introduce a metapopulation SEIR model that integrates fine-grained, dynamic mobility networks to simulate the spread of SARS-CoV-2 in 10 of the largest US metropolitan statistical areas. Derived from cell phone data, our mobility networks map the hourly movements of 98 million people from neighborhoods (census block groups, or CBGs) to points of interest (POIs) such as restaurants and religious establishments, connecting 57k CBGs to 553k POIs with 5.4 billion hourly edges. We show that by integrating these networks, a relatively simple SEIR model can accurately fit the real case trajectory, despite substantial changes in population behavior over time. Our model predicts that a small minority of "superspreader" POIs account for a large majority of infections and that restricting maximum occupancy at each POI is more effective than uniformly reducing mobility. Our model also correctly predicts higher infection rates among disadvantaged racial and socioeconomic groups solely from differences in mobility: we find that disadvantaged groups have not been able to reduce mobility as sharply, and that the POIs they visit are more crowded and therefore higher-risk. By capturing who is infected at which locations, our model supports detailed analyses that can inform more effective and equitable policy responses to COVID-19. </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Data Section -->
+    <section id="data" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Data</h2>
+                <p>Our mobility networks are available for download through the <a href=https://www.safegraph.com/covid-19-data-consortium>SafeGraph Data Consortium</a>. All SafeGraph data is anonymized and aggregated. We obtained an IRB exemption for SafeGraph data from Northwestern University.</p>
+                <p>Our code is available on
+                    <a href="https://github.com/snap-stanford/covid-mobility" target="_new"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulation" class="container content-section text-center">
+        <div class="row">
+            <div class="simbox">
+                <h2>Simulation</h2>
+                <div id="simulation-wrapper">
+                  <p class="subhead">What if we hadn’t socially distanced? What was the impact of mobility to different types of places on the overall epidemic curve? Find out in our interactive simulation below!</p>
+                  <div class="nojs">JavaScript is required to view and interact with this simulation.</div>
+                  <span class="sans">MSA: </span><div id="msa-tabs"></div><br/>
+                  <div id="graphs-wrapper">
+                    <div id="mobility-wrapper"></div>
+                    <p>This graph illustrates the amount of mobility you would have had under your scenario (red), compared to what actually happened (black). Mobility is represented as daily total number of visits to points of interest (any non-residential place), based on aggregated geolocation data from SafeGraph.</p>
+                    <div id="epicurves-wrapper"></div>
+                    <p>This graph depicts the cumulative COVID-19 case counts predicted by our model under your scenario (red), compared to our model predictions when run with actual mobility data (green), which closely track real case counts (as reported by The New York Times).</p>
+                    <div id="pois-wrapper"></div>
+                  </div>
+                  <div id="options-wrapper">
+                    <h6>Show mobility and infections with the following options:</h6>
+                  </div>
+                  <div id="daterange-tabs"></div>
+
+                  <p class="subhead">Interactive simulation frontend produced in collaboration with <a href="https://zamfi.net/" title="zamfi.net: J.D. Zamfirescu">J.D. Zamfirescu-Pereira</a>, <a href="https://whiting.me" title="Mark E. Whiting | Mark studies coordination at scale.">Mark Whiting</a>, <a href="https://www.jacobritchie.xyz" title="Jacob Ritchie">Jacob Ritchie</a>, and <a href="https://hci.stanford.edu/msb/" title="Michael Bernstein&thinsp;&middot;&thinsp;Stanford HCI">Michael Bernstein</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- acknowledgment Section -->
+    <section id="press" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Selected Media Articles</h2>
+                <p style="margin-top:20px;">
+                <a href="https://www.nytimes.com/2020/11/10/health/covid-indoor-venues-infections.html"><i>The New York Times</i></a>;
+                <a href="https://www.washingtonpost.com/health/2020/11/10/coronavirus-restaurants-gyms-hotels-risk/"><i>The Washington Post</i></a>; 
+                <a href="https://www.technologyreview.com/2020/11/10/1011930/a-cap-on-numbers-in-restaurants-could-stop-them-becoming-covid-hotspots/amp/">MIT Technology Review</a>;
+                <a href="https://www.huffingtonpost.fr/entry/covid-19-contamination-risque-plus-deconfinement_fr_5faa8839c5b64c88d404e089">Huffington Post</a>;
+                <a href="https://www.telegraph.co.uk/global-health/science-and-disease/cap-numbers-diners-restaurants-minimise-infection-risk-study/">The Telegraph</a>; 
+                <a href="https://www.bloomberg.com/news/articles/2020-11-10/covid-superspreader-risk-is-linked-to-restaurants-gyms-hotels">Bloomberg</a>;
+                <a href="https://edition.cnn.com/2020/11/10/health/covid-19-modeling-high-risk-places-study-wellness/index.html">CNN</a>;
+                <a href="https://www.statnews.com/2020/11/10/restaurants-gyms-were-spring-superspreader-sites-occupancy-limits-could-control-spread/">STAT</a>;
+                <a href="https://www.nature.com/articles/d41586-020-03140-4"><i>Nature</i> News</a> and <a href="https://www.nature.com/articles/d41586-020-02964-4"><i>Nature</i> Accompanying News and Views</a>;
+                Stanford Press <a href=https://news.stanford.edu/2020/11/10/computer-model-can-predict-covid-19s-spread/>article</a> and <a href=https://www.youtube.com/watch?v=FZG85TN1nhE>video</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- team Section -->
+    <section id="team" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Team</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-circle img-responsive img-center" src="images/serina150x150.png" alt> <!-- style = "height: 150px;" -->
+                    <h3><a href="https://serinachang5.github.io/" target="_new">Serina Chang</a>
+                        <br><a class="twitter" href="https://twitter.com/serinachang5"><i class="fa fa-twitter fa-fw"></i> @serinachang5</a>
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-circle img-responsive img-center" src="images/emma150x150.png" alt>
+                    <h3><a href="https://cs.stanford.edu/~emmap1" target="_new">Emma Pierson</a>
+                        <br><a class="twitter" href="https://twitter.com/2plus2make5"><i class="fa fa-twitter fa-fw"></i> @2plus2make5</a>
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-circle img-responsive img-center" src="images/pangwei150x150.png" alt>
+                    <h3><a href="https://cs.stanford.edu/~pangwei" target="_new">Pang Wei Koh</a>
+                        <br><a class="twitter" href="https://twitter.com/PangWeiKoh"><i class="fa fa-twitter fa-fw"></i> @PangWeiKoh</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-circle img-responsive img-center" src="images/jaline150x150.png" alt>
+                    <h3><a href="https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=44305" target="_new">Jaline Gerardin</a>
+                        <br><a class="twitter" href="https://twitter.com/jalinegerardin"><i class="fa fa-twitter fa-fw"></i> @jalinegerardin</a>
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-circle img-responsive img-center" src="images/beth150x150.png" alt>
+                    <h3><a href="https://sociology.northwestern.edu/people/faculty/core/beth-redbird-.html" target="_new">Beth Redbird</a>
+                        <br><a class="twitter" href="https://twitter.com/beth_redbird"><i class="fa fa-twitter fa-fw"></i> @beth_redbird</a>
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-circle img-responsive img-center" src="images/david150x150.png" alt>
+                    <h3><a href="https://sociology.stanford.edu/people/david-grusky" target="_new">David Grusky</a>
+                        <br><a class="twitter" href="https://twitter.com/davidgrusky"><i class="fa fa-twitter fa-fw"></i> @davidgrusky</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 text-center">
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <img class="img-circle img-responsive img-center" src="images/jure150x150.png" alt>
+                    <h3><a href="http://cs.stanford.edu/people/jure/" target="_new">Jure Leskovec</a>
+                        <br><a class="twitter" href="https://twitter.com/jure"><i class="fa fa-twitter fa-fw"></i> @jure</a>
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- acknowledgment Section -->
+    <section id="acknowledgments" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Support</h2>
+                <p style="margin-top:20px;">
+
+                  This research was supported by US National Science Foundation under OAC-1835598 (CINES), OAC-1934578 (HDR), CCF-1918940 (Expeditions), IIS-2030477 (RAPID), Stanford Data Science Initiative, Wu Tsai Neurosciences Institute, and Chan Zuckerberg Biohub. S.C. was supported by an NSF Fellowship. E.P. was supported by a Hertz Fellowship. P.W.K. was supported by the Facebook Fellowship Program. J.L. is a Chan Zuckerberg Biohub investigator.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+<!--     <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Grayscale</h2>
+                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Start Bootstrap</h2>
+                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Map Section -->
+    <!-- <div id="map"></div> -->
+
+    <footer>
+        <div class="container text-center">
+            <p style="opacity: 0.3;">Photo credit for banner at the top of this page: NASA satellite imagery. Thanks to Tim Althoff for the website template.</p>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- <script type="text/javascript" src="js/js.js"></script> -->
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+    <!-- d3.js -->
+    <script src="https://d3js.org/d3.v6.js"></script>
+
+    <!-- Load interactive component -->
+    <script type="text/javascript" src="js/interactive/interactive.js"></script>
+</body>
+
+</html>
