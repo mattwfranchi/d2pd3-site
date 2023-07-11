@@ -3,10 +3,74 @@
   justify-content: center;
   align-items: center;
   height: 80vh; /* Adjust as needed */
-  background: #000; /* Adjust as needed */
-  color: #fff; /* Adjust as needed */
+
+  
+}
+
+.hero::after {
+  content: "";
+  background: url("../images/d2pd3-banner.png"); /* Adjust as needed */
+  background-size: cover;
+  opacity: 0.8; /* Adjust as needed */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 .title {
-  font-size: 2.5em; /* Adjust as needed */
+  font-size: 3em; /* Adjust as needed */
+  text-align: center;
+  color: whitesmoke;
 }
+
+.paperLink { 
+  font-size: 2em; 
+  text-align: center;
+  
+  color: whitesmoke;
+  
+
+}
+
+.paperLink:hover { 
+  transform: scale(1.07);
+  color: white; 
+  transition: 0.3s
+}
+
+.bannerContainer { 
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.50);
+  border-radius: 20px;
+  padding-top: 3%; 
+  padding-bottom: 3%;
+  width: 45%;
+    
+}
+
+.banner { 
+  flex: 0 0 90%;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { 
+  
+  
+}
+
+
+a:active { text-decoration: none; }

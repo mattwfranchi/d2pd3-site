@@ -1,7 +1,42 @@
+html {
+  scroll-behavior: smooth;
+  
+}
+
+
+
+.projectContent { 
+  margin-top: 5%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+/* alternating background colors for sections */
+section:nth-of-type(odd) {
+  background-color: #f7f7f7;
+  width: 85%;
+  border-radius: 20px;
+  
+}
+
+section:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+section {
+  padding: 50px 0;
+}
+
+
 .list {
   display: grid;
   margin: 0;
-  /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
   --w: 280px;
   --n: 2;
   gap: var(--size-gap);
@@ -12,6 +47,8 @@
   margin-bottom: var(--size-gap);
   margin-top: var(--size-gap);
 }
+
+
 
 .listItem {
   margin: 0;
@@ -52,3 +89,128 @@
   max-width: none;
   line-height: var(--line-height-loose);
 }
+
+
+#projContainer { 
+  display: flex;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 5% 5% 5%;
+
+}
+
+#projInfoContainer { 
+  text-align: justify;
+  flex: 0 0 40%;
+}
+
+#projGIFContainer { 
+  
+  flex: 0 0 40%;
+}
+
+#projGIF {
+  border-radius: 20px;
+
+}
+
+
+/* DATA */ 
+#dataContainer { 
+display: flex; 
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+}
+
+
+#dataGitHubLink { 
+  color: rebeccapurple!important;
+}
+
+#dataGitHubLink:hover { 
+  transform: scale(1.05)!important;
+  transition: 0.3s!important;
+}
+
+/* PRESS */
+#pressContainer { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* TEAM */ 
+
+.teamContainer { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.teamGrid {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+  width: 75%; 
+  justify-content: center;
+}
+
+.teamGridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.teamGridItem h3 { 
+ 
+}
+
+.teamGridItem a { 
+  
+  padding-bottom: 4%;
+  
+}
+
+.teamPortrait {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  
+}
+
+.teamGridItem:hover {
+  transform: scale(1.02);
+  filter: brightness(80%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+h2 { 
+  font-size: 2em;
+  text-align: center;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+#supportStatement { 
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#siteDeveloperStatement { 
+  margin-top: -20px;
+}
+

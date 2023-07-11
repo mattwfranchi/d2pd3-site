@@ -1,0 +1,33 @@
+.faqs {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faq {
+  margin-bottom: 1em;
+  padding: 0.1em 1em 0.1em 1em;
+  border: 1px solid #333;
+  border-radius: 10px;
+  min-height: 50px; 
+}
+
+.faq:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.faqQuestion {
+  cursor: pointer;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.faq.open .faqAnswer {
+  max-height: 1000px;  /* This can be any value large enough to show all the content */
+  opacity: 1;
+}

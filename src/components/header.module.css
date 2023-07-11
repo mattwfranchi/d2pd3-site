@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px; 
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #ffffff;  /* Light background */
+  color: #333333;  /* Dark text */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);  /* Drop shadow */
+}
+
+.title {
+  font-size: 1.5em;
+  font-family: 'Helvetica Neue', sans-serif; /* Modern, sans-serif font */
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+}
+
+.navList li {
+  margin-left: 20px;
+}
+
+.navList a {
+  color: #333333;  /* Dark link color */
+  text-decoration: none;
+  transition: color 0.3s ease;  /* Transition for hover effect */
+}
+
+.navList a:hover {
+  color: #666666;  /* Darken link color on hover */
+}
+
+#orgLogo { 
+  display: flex; 
+  max-width: 20%;
+}
+
+.header a { 
+ display: inline-block;
+}
+
+.header a:hover { 
+  -webkit-transform: scale(1.1); /* Chrome, Safari, Opera */
+  text-decoration: underline;
+  transition: 0.3s;
+}
