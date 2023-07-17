@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkd2pd3=self.webpackChunkd2pd3||[]).push([[888],{2206:function(e,t,n){n.r(t),n.d(t,{default:function(){return l}});var r=n(7294);function l(e){let{data:t}=e;const n=t.markdownRemark;return r.createElement("div",null,r.createElement("h1",null,n.frontmatter.title),r.createElement("div",{dangerouslySetInnerHTML:{__html:n.html}}))}}}]);
+//# sourceMappingURL=component---src-pages-md-js-c037e9e09e3aed011fda.js.map
