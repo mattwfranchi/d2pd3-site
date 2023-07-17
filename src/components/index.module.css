@@ -3,7 +3,13 @@ html {
   
 }
 
+table, th, td { 
+  border: 1px solid black;
+}
 
+th, td { 
+  padding: 5px;
+}
 
 .projectContent { 
   margin-top: 5%;
@@ -16,12 +22,13 @@ html {
 /* alternating background colors for sections */
 section:nth-of-type(odd) {
   background-color: #f7f7f7;
-  width: 85%;
+  max-width: 85%;
   border-radius: 20px;
   
 }
 
 section:nth-of-type(even) {
+  max-width: 100%;
   background-color: #ffffff;
 }
 
@@ -126,10 +133,21 @@ align-items: center;
 
 
 #dataGitHubLink { 
-  color: rebeccapurple!important;
+  padding: 5px;
+  font-size: 25px;
+  color: black!important;
 }
 
-#dataGitHubLink:hover { 
+
+#dataTable { 
+  padding: 50px;
+  border-radius: 20px;
+  background: rgba(237,237,237,0.64);
+
+}
+
+
+#dataGitHubLink a:hover { 
   transform: scale(1.05)!important;
   transition: 0.3s!important;
 }
@@ -140,6 +158,8 @@ align-items: center;
   flex-direction: column; 
   justify-content: center;
   align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 
@@ -150,13 +170,13 @@ align-items: center;
   flex-direction: column; 
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .teamGrid {
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
   gap: 2%;
-  width: 75%; 
+  width: 100%; 
   justify-content: center;
 }
 
@@ -179,9 +199,9 @@ align-items: center;
 }
 
 .teamPortrait {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  border-radius: 100px;
+  width: 200px!important;
+  height: 200px!important;
   object-fit: cover;
   
 }
@@ -202,15 +222,59 @@ h2 {
 }
 
 
+#supportContainer { 
+  max-width: 100%; 
+  width: 100%;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
 #supportStatement { 
   text-align: center;
   display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #siteDeveloperStatement { 
   margin-top: -20px;
 }
 
+
+
+
+
+/* Media queries for mobile adaptation */
+@media only screen and (max-width: 768px) {
+  
+  #projContainer,
+  .teamGrid {
+    flex-direction: column;
+  }
+
+  #projInfoContainer,
+  #projGIFContainer,
+  .teamGridItem {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  #projGIF {
+    width: 100%;
+  }
+
+  .teamPortrait {
+    width: 150px;
+    height: 150px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .list {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
