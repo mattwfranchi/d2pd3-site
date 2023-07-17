@@ -86,7 +86,8 @@ const IndexPage = ({ data }) => (
       <section id="data">
       <div id={styles.dataContainer}>
         <h2>Data</h2>
-        <p> Our image data was acquired from <a href="https://data.getnexar.com/" target="_blank">Nexar</a>. Nexar images in New York City are sourced from ridesharing drivers. All Nexar data is anonymized, with significant measures in place to uncouple riders with ride footage. We obtained an IRB exemption for the image data from Cornell University. </p>
+        <p> Our image data was acquired from <a href="https://data.getnexar.com/" target="_blank">Nexar</a>. Nexar images in New York City are sourced from ridesharing drivers. All Nexar data is anonymized. We obtained an IRB exemption for the image data from Cornell University. </p>
+        <p> For questions & comments, please contact <a href="mailto:mwf62@cornell.edu">mwf62@cornell.edu</a>.</p>
         <p> Our code is available on <a id={styles.dataGitHubLink} href="https://github.com/mattwfranchi/police-deployment-patterns" target="_blank">GitHub.</a></p>
           
         <div id={styles.dataTable}> 

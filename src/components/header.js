@@ -16,19 +16,14 @@ const Header = () => (
         <Link to="#project" className={headerStyles.project}>PROJECT</Link>
       </li>
       <li>
-        <Link to="https://dl.acm.org/doi/10.1145/3593013.3594020" className={headerStyles.paper} target="_blank">PAPER</Link>
+        <Link to="https://arxiv.org/abs/2305.15210" className={headerStyles.paper} target="_blank">PAPER</Link>
       </li>
       <li>
         <Link to="#data" className={headerStyles.data}>DATA</Link>
       </li>
-      <li>
-        <Link to="#press" className={headerStyles.press}>PRESS</Link>
-      </li>
+
       <li>
         <Link to="#team" className={headerStyles.team}>TEAM</Link>
-      </li>
-      <li>
-        <Link to="#support" className={headerStyles.support}>SUPPORT</Link>
       </li>
     </ul>
   </header>

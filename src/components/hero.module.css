@@ -27,7 +27,7 @@
 }
 
 .paperLink { 
-  font-size: 2em; 
+  font-size: 2.25em; 
   text-align: center;
   
   color: whitesmoke!important;
@@ -38,7 +38,16 @@
 .paperLink a{ 
   color: inherit!important;
   text-decoration: underline!important;
+  padding-left: 30px; 
+  padding-right: 30px;
 
+}
+
+.heroLinks { 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
 }
 
 .paperLink:hover { 
@@ -52,6 +61,7 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(90deg, transparent, rgba(32,32,34,0.97), transparent);
   border-radius: 1px;
   padding-top: 30px; 
