@@ -249,6 +249,11 @@ h2 {
 /* Media queries for mobile adaptation */
 @media only screen and (max-width: 768px) {
   
+  #supportContainer {
+    padding-left: 20px;  /* adjust as needed */
+    padding-right: 20px;  /* adjust as needed */
+  }
+  
   #projContainer,
   .teamGrid {
     flex-direction: column;
@@ -260,14 +265,40 @@ h2 {
     flex: 0 0 100%;
     margin-bottom: 20px;
   }
+  
+  #projInfoContainer { 
+    width: 90%;
+  }
 
   #projGIF {
     width: 100%;
   }
 
+  
+  #dataContainer p { 
+    text-align: center;
+    width: 80%;
+  }
+  
+  #dataTable { 
+    width: 90%;
+  }
+  
+  
+  
   .teamPortrait {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
+  }
+  
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .teamGridItem { 
+    padding: 20px;
+  
   }
 
   h2 {
