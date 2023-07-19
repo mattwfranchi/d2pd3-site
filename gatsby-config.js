@@ -13,7 +13,7 @@ module.exports = {
     title: `Detecting Disparities in Police Deployments Using Dashcam Data`,
     description: `Code, resources, and news on the D2PD3 project, an urban sensing and computational social science project that seeks to identify disparities in police deployments from urban street-level dashcam data.`,
     author: `Matt Franchi`,
-    siteUrl: `https://policing.tech.cornell.edu`,
+    siteUrl: `/d2pd3-site`,
   },
   plugins: [
     `gatsby-plugin-image`,
